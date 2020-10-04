@@ -1,0 +1,121 @@
+body {
+	background-color: #d2eef9;
+	margin: 0;
+	padding: 0;
+	width: 1000px;
+	height: 900px;
+}
+
+.section1 {
+	width: 845px;
+	height: 845px;
+	margin: 80px auto;
+	position: relative;
+}
+
+.section1 .box {
+	width: 65px;
+	height: 65px;
+	float: left;
+	
+}
+.section1 .blue {
+	animation: heewonblue;
+	animation-duration: 4s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+}
+
+
+.section1 .blue:hover {
+	animation: heewonrotate;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+	transition-property: all;
+	background-color: #b7d2e8;
+	transition-property: background-color;
+	transition-duration: 1s;
+
+}
+
+.section2 {
+	width: 260px;
+	height: 260px;
+	margin-left: 100px;
+	animation: falling;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	position: absolute;
+}
+
+.section2 .box {
+	width: 20px;
+	height: 20px;
+	float: left;
+}
+
+.section2 .blue {
+	background-color: #a6ceec;
+}
+
+.section3 {
+	width: 260px;
+	height: 260px;
+	margin-left: 1450px;
+	animation: falling;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	position: absolute;
+}
+
+.section3 .box {
+	width: 20px;
+	height: 20px;
+	float: left;
+}
+
+.section3 .blue {
+	background-color: #a6ceec;
+}
+
+
+@keyframes heewonblue{
+
+	0% {
+		margin-left: 0;
+	}
+	100% {
+		background-color: #a7d6fb;
+	}
+}
+
+
+@keyframes heewonrotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(180deg);
+		border-radius: 40px;
+	}
+}
+
+
+@keyframes falling {
+	0% {
+		top: 25%
+	}
+
+	100% {
+		top: 38%
+	}
+}
+
+
+
+
+
